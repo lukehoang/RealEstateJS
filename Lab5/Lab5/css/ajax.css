@@ -1,0 +1,266 @@
+﻿/* Base */
+
+body {
+    text-align: center;
+    color: #3f3f3f;
+    margin: 0;
+    padding: 0;
+    font-family: 'Marcellus', serif;
+}
+
+body {
+    background: url(http://itsok.io/wp-content/uploads/2016/04/bg01-1024x576.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.clear {
+    clear: both;
+    height: 60px;
+}
+
+button {
+    background-color: #a1a7a5;
+    border-radius: 12px;
+    border: none;
+    color: #1a1919;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    box-shadow: 3px 3px 20px #3f3f3f;
+    text-shadow: 1px 1px 4px white;
+    font-family: 'Marcellus', serif;
+    width: 210px;
+    margin: 10px;
+}
+
+    button:hover {
+        box-shadow: 5px 5px 30px #3f3f3f;
+        color: darkred;
+    }
+
+a {
+    color: #3f3f3f;
+    text-decoration: none;
+    text-shadow: 2px 5px 20px cornsilk;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+    a:hover {
+        color: darkred;
+        text-shadow: 2px 5px 20px darkred;
+    }
+
+.active {
+    color: white;
+}
+
+.footer h4 {
+    line-height: 30px;
+    margin: 0;
+    text-shadow: 2px 5px 20px black;
+    color: #3f3f3f;
+}
+
+.footer {
+    height: 110px;
+    flex-shrink: 0;
+    background-color: rgba(185, 164, 164, 0.9);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 370px;
+}
+
+.push {
+    height: 140px;
+}
+
+.content {
+    flex: 0 auto;
+}
+
+
+/* MOBILE DESIGN*/
+.cover-page {
+    width: 100%;
+    display: block;
+}
+
+.title {
+    color: #3f3f3f;
+    text-shadow: 2px 5px 20px rgb(233, 86, 86);
+    font-size: 180%;
+    transform: translate(-50%, -50%);
+    font-family: 'Cookie', cursive;
+    height: 100px;
+}
+
+.heading {
+    color: rgba(29, 26, 26, 1);
+    text-shadow: 2px 5px 20px #3f3f3f;
+}
+
+.navbar-container {
+    width: 100%;
+}
+
+.header .navbar {
+    padding: 0;
+    margin: 10px;
+}
+
+.header li a:hover,
+.header li:hover {
+    color: beige;
+    font-weight: 400;
+    background-color: firebrick;
+}
+
+#display {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.navbar li {
+    /* design for mobile*/
+    display: block;
+}
+
+.navbar-left {
+    width: 50%;
+    float: left;
+}
+
+.navbar-right {
+    width: 10%;
+    float: right;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.container-50,
+.container-33 {
+    width: 90%;
+    margin: auto;
+}
+
+    .container-100 > p,
+    .container-50 > p,
+    .container-33 > p {
+        line-height: 1.5em;
+        font-size: 0.9em;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+.container-100 img {
+    width: 80%;
+    min-width: 150px;
+}
+
+.container-50 img,
+.container-33 img {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    background-color: rgba(185, 164, 164, 0.9);
+    border-radius: 10px;
+}
+
+td {
+    height: 50px;
+    padding: 8px;
+}
+
+.textbox {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 251, 251, 0.671);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.textHeader {
+    color: black;
+    font-weight: 800;
+    padding-left: 100px;
+}
+
+td button {
+    width: 100px;
+    background-color: rgba(169, 199, 166, 0.966);
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+}
+
+.storeHouse,
+.update,
+.searchPrice,
+.searchBB,
+.searchMLS {
+    display: inline-block;
+}
+
+/* DESTOP DESIGN*/
+
+@media screen and (min-width: 600px) {
+
+    .navbar li {
+        display: inline-block;
+        margin: 0 5%;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        margin-top: 160px;
+    }
+
+    .container-50 {
+        width: 70%;
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .container-33 {
+        margin: 30px;
+        width: 30%;
+        float: left;
+    }
+
+    img {
+        width: 80%;
+        border: 3px solid rgba(185, 164, 164, 0.5);
+        border-radius: 15px;
+    }
+
+    #display {
+        width: 70%;
+    }
+
+    header {
+        height: 270px;
+    }
+}

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 5 - JQuery, AJAX, and WebAPIs</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/ajax.css" />
+    <link href="https://fonts.googleapis.com/css?family=Marcellus" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar-container">
+            <ul class="navbar navbar-left">
+                <li><a href="#" id="a_search">SEARCH</a></li>
+                <li><a href="#" id="a_add">ADD</a></li>
+                <li><a href="#" id="a_update">UPDATE</a></li>
+            </ul>
+            <ul class="navbar navbar-right">
+                <li><a href="#">Log out</a></li>
+            </ul>
+
+        </nav>
+        <div class="clear"></div>
+        <div class="cover-page">
+            <span class="title">
+                <h1>Developers Real Estate</h1>
+            </span>
+        </div>
+        <div class="clear"></div>
+    </header>
+    <h2 class="heading">Find Your Way Home</h2>
+    <div>
+        <h4>Search By</h4>
+        <button id="btn_MLS">MLS number</button>
+        <button id="btn_Price">Price</button>
+        <button id="btn_BedBath">Bedroom/Bathroom</button>
+    </div>
+    <div class="clear"></div>
+    <table class="container-50">
+        <tr class="txtMLS">
+            <td><input id="txtMLS" type="text" class="textbox" placeholder="MLS number" /></td>
+        </tr>
+        <tr class="txtAddress">
+            <td><input id="txtAddress" type="text" class="textbox" placeholder="Address" /></td>
+        </tr>
+        <tr class="txtBedroom">
+            <td><input id="txtBedroom" type="text" class="textbox" placeholder="Bedroom" /></td>
+        </tr>
+        <tr class="txtBedroom">
+            <td><input id="txtBathroom" type="text" class="textbox" placeholder="Bathroom" /></td>
+        </tr>
+        <tr class="txtPrice">
+            <td><input id="txtPrice" type="text" class="textbox" placeholder="Price" /></td>
+        </tr>
+        <tr class="txtSize">
+            <td><input id="txtSize" type="text" class="textbox" placeholder="Size (foot square)" /></td>
+        </tr>
+        <tr class="txtDescription">
+            <td><input id="txtDescription" type="text" class="textbox" placeholder="Description" /></td>
+        </tr>
+        <tr class="txtUrl">
+            <td><input id="txtUrl" type="text" class="textbox" placeholder="Picture url" /></td>
+        </tr>
+        <tr class="txtStatus">
+            <td class="textHeader">
+                Active<input name="status" type="radio" value="Active" />
+                Pending<input name="status" type="radio" value="Pending" />
+                Sold<input name="status" type="radio" value="Sold" />
+            </td>
+        </tr>
+
+        <tr class="searchMLS">
+            <td><button id="btnGetHouseByMLS">Search</button></td>
+        </tr>
+        <tr class="storeHouse">
+            <td><button id="btnStoreHouse">Add</button></td>
+        </tr>
+        <tr class="update">
+            <td><button id="btnChangeHouseStatus">Update</button></td>
+        </tr>
+        <tr class="searchPrice">
+            <td><button id="btnGetHousesByRange">Search</button></td>
+        </tr>
+        <tr class="searchBB">
+            <td><button id="btnGetHousesByBedBath">Search</button></td>
+        </tr>
+    </table>
+    <br /><br />
+    <div id="display"></div>
+    <br />
+    <div class="push"></div>
+    <div class="footer">
+        <br>
+        <h4>Mung Hoang - Hansel Tan</h4>
+        <h4>CIS 3344 - Lab5 - JQuery, AJAX, and WebAPIs </h4>
+    </div>
+    <script src="JS/ajax.js"></script>
+</body>
+</html>
